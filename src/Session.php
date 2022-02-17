@@ -92,6 +92,7 @@ namespace ExpressPHP\Plugins {
                     };
                 }
                 if(isset($req->cookies[$name])){
+                    session_start();
                     $req->session = new Session(true);
                 }else{
                     $id = $options["genid"]($req);
