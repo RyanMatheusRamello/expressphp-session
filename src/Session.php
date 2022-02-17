@@ -70,7 +70,7 @@ namespace ExpressPHP\Plugins {
             return function($req, $res, $next) use ($options) {
                 $name = $options["name"] ?? "expressphp_session";
                 if(!isset($options["secret"])){
-                    throw new Error("Você deve informar um secret");
+                    throw new \Error("Você deve informar um secret");
                 }
                 session_name($name);
                 if(!isset($options["cookie"])){
