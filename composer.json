@@ -1,0 +1,17 @@
+{
+    "name": "ryanphpjs/expressphp-session",
+    "description": "Um pacote para gerenciamento de sessao para ExpressPHP",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "RyanMatheusRamello",
+            "email": "ryan.matheus@aluno.ifsp.edu.br"
+        }
+    ],
+    "autoload": {
+		"psr-4": {
+			"ExpressPHP\\Plugins\\": "src/"
+		}
+	}
+}
